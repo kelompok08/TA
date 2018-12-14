@@ -1,0 +1,190 @@
+#Mencetak Menu
+def menu():
+	print ("Pilih yang mau dihitung")
+	print
+	print ("1. luas Persegi Panjang")
+	print ("2. keliling persegi panjang")
+	print ("3. luas Lingkaran")
+	print ("4. keliling lingkaran")
+	print ("5. luas segitiga")
+	print ("6. keliling segitiga")
+	print ("7. luas persegi")
+	print ("8. keliling persegi")
+	print ("9. luas layang layang")
+	print ("10. keliling layang layang")
+	print ("11. exit ")
+	
+	
+def luas_persegip():
+	print ("Menghitung Luas Persegi Panjang")
+	print ("rumus luas persegi = Panjang x lebar")
+	p = int(input("Masukkan Panjang : "))
+	l = int(input("Masukkan Lebar : "))
+	luas = p*l
+	print ("Luas Persegi Panjang adalah ",luas)
+	print
+	coba = str(input("Coba lagi [Y/N]? "))
+	if coba == ("y"):
+		menu()
+	else:
+		exit()
+
+def keliling_persegip():
+	print ("Menghitung keliling Persegi Panjang")
+	print ("rumus keliling persegi = (Panjang+lebar)x2")
+	p = int(input("Masukkan Panjang : "))
+	l = int(input("Masukkan Lebar : "))
+	keliling = (p+l)*2
+	print("keliling persegi panjang adalah ",keliling)
+	print
+	coba = str(input("Coba lagi [Y/N]? "))
+	if coba == ("y"):
+		menu()
+	else:
+		exit()
+		
+
+def luas_lingkaran():
+	print ("Menghitung Luas Lingkaran")
+	print ("rumus luas lingkaran = phi x (jari jari pangkat 2)")
+	r = int(input("Masukkan Jari-Jari : "))
+	luas = 3.14*(r**2)
+	print ("Luas Lingkaran adalah ",luas)
+	print
+	coba = str(input("Coba lagi [Y/N]? "))
+	if coba == ("y"):
+		menu()
+	else:
+		exit()
+
+def keliling_lingkaran():
+	print ("Menghitung keliling lingkaran")
+	print ("rumus keliling lingkaran = phi x diameter")
+	d = int(input("masukkan diameter: "))
+	keliling = 3.14*d
+	print ("keliling lingkaran adalah", keliling)
+	print
+	coba = str(input("Coba lagi [Y/N]? "))
+	if coba == ("y"):
+		menu()
+	else:
+		exit()
+
+def luas_segitiga():
+	print ("Menghitung Luas Segitiga")
+	print ("rumus luas segitiga = (alas x tinggi)/2")
+	a = int(input("Masukkan Alas : "))
+	t = int(input("Masukkan Tinggi : "))
+	luas = (a*t)/2
+	print ("Luas Segitiga adalah ",luas)
+	print
+	coba = str(input("Coba lagi [Y/N]? "))
+	if coba == ("y"):
+		menu()
+	else:
+		exit()
+
+def keliling_segitiga():
+	print ("menghitung keliling segitiga")
+	print ("rumus keliling segitiga = sisi + sisi + sisi")
+	s = int(input("masukkan sisi: "))
+	keliling = s+s+s
+	print ("keliling segitiga adalah ", keliling)
+	print
+	coba = str(input("Coba lagi [Y/N]? "))
+	if coba == ("y"):
+		menu()
+	else:
+		exit()
+
+	
+def luas_persegi():
+	print ("menghitung luas persegi")
+	print ("rumus luas persegi = sisi x sisi")
+	s = int(input("masukkan sisi: "))
+	luas = s*s
+	print ("luas persegi adalah ", luas)
+	print
+	coba = str(input("Coba lagi [Y/N]? "))
+	if coba == ("y"):
+		menu()
+	else:
+		exit()
+
+def keliling_persegi():
+	print ("menghitung keliling persegi")
+	print ("rumus keliling persegi = 4 x sisi")
+	s = int(input("masukkan sisi: "))
+	keliling = s*4
+	print ("keliling persegi adalah ", keliling)
+	print
+	coba = str(input("Coba lagi [Y/N]? "))
+	if coba == ("y"):
+		menu()
+	else:
+		exit()
+
+def luas_layangan():
+	print ("menghitung luas layang layang ")
+	print ("rumus luas layang layang = diagonal1 x diagonal2 /2 ")
+	d1 = int(input("masukkan diagonal 1: "))
+	d2 = int(input("masukkan diagonal 2: "))
+	luas = d1*d2/2
+	print ("luas layang layang adalah ", luas)
+	print
+	coba = str(input("Coba lagi [Y/N]? "))
+	if coba == ("y"):
+		menu()
+	else:
+		exit()
+
+def keliling_layangan():
+	print ("menghitung keliling layang layang")
+	print ("rumus keliling layang layang = (sisi pendek + sisi panjang)x 2")
+	s1 = int(input("masukkan sisi pendek: "))
+	s2 = int(input("masukkan sisi panjang: "))
+	keliling = (s1+s2)*2
+	print ("keliling layang layang adalah ", keliling)
+	print
+	coba = str(input("Coba lagi [Y/N]? "))
+	if coba == ("y"):
+		menu()
+	else:
+		exit()
+		
+print ("Selamat Datang di Program Untuk Menghitung bangun ruang")
+print ("-----------------------------------------------")
+print
+menu()
+
+true=1
+while true:
+	pilih = int(input("Masukkan pilihan : "))
+	if pilih == 1:
+		luas_persegip()
+	elif pilih == 2:
+		keliling_persegip()
+	elif pilih == 3:
+		luas_lingkaran()
+	elif pilih == 4:
+		keliling_lingkaran()
+	elif pilih == 5:
+		luas_segitiga()
+	elif pilih == 6:
+		keliling_segitiga()
+	elif pilih == 7:
+		luas_persegi()
+	elif pilih == 8:
+		keliling_persegi()
+	elif pilih == 9:
+		luas_layangan()
+	elif pilih == 10:
+		keliling_layangan()
+	elif pilih == 11:			
+		print ("\n"*100)
+		print("terima kasih ")
+		break
+	else :
+		print ("Maaf pilihan yang anda masukkan tidak terdaftar")
+		print ("\n"*100)
+		break
